@@ -1,0 +1,188 @@
+---
+title: "Every component"
+description: "You can reference the exact syntax and implementation of each component on this page. Set 'draft: ' to 'true' to see the page on the website."
+layout: layout.vto
+draft: false
+---
+<h1>{{ title }}</h1>
+<p>{{ description }}</p>
+<hr>
+
+{{
+  await comp.Hero({
+    heading: "Hero Component",
+    subheading: "An exampleAn exampleAn exampleAn exampleAn exampleAn exampleAn exampleAn exampleAn exampleAn exampleAn example",
+    image_url: "/assets/images/freelance/trax-showcase.png",
+    image_alt: "A mech!",
+    section_height_min: "300px", // The minimum height the section can be
+  })
+}}
+
+{{
+  await comp.HorizontalGallery({
+    cards: [ // Using an array for the cards
+      {
+        card_url: "/pages/about",
+        image_url: "/assets/images/plants.png",
+        heading: "Horizontal Gallery",
+        blurb: "This is a card blurb",
+      },
+      {
+        card_url: "/pages/about",
+        image_url: "/assets/images/plants.png",
+        heading: "Heading 2",
+        blurb: "This is a second card blurb",
+      },
+      {
+        card_url: "/pages/about",
+        image_url: "/assets/images/plants.png",
+        heading: "Heading 3",
+        blurb:
+          "This is another card blurb, and you can fit a lot of text in here.",
+      },
+    ],
+  })
+}}
+
+{{
+  await comp.ImageGrid({
+    columns: 3,
+    grid: [
+      {
+        link: "/pages/about", // If you do not provide a link, the grid item's link will default to the URL of the image itself.
+        image_url: "/assets/images/freelance/trax-showcase.png",
+        image_alt: "Alt text",
+      },
+      {
+        image_url: "/assets/images/plants.png",
+        image_alt: "Alt text",
+      },
+      {
+        image_url: "/assets/images/Hundred-Cuts-Logo-System_Youtube Icon.png",
+        image_alt: "Alt text",
+      },
+      {
+        image_url: "/assets/images/freelance/trax-showcase.png",
+        image_alt: "Alt text",
+      },
+      {
+        image_url: "/assets/images/plants.png",
+        image_alt: "Alt text",
+      },
+      {
+        image_url: "/assets/images/Hundred-Cuts-Logo-System_Youtube Icon.png",
+        image_alt: "Alt text",
+      },
+    ],
+  })
+}}
+
+{{
+  await comp.ImageWithTextRight({
+    section_height_min: "300px",
+    image_orientation: "left",
+    image_url: "/assets/images/freelance/trax-showcase.png",
+    image_alt: "A mech!",
+    heading: "Image with text right",
+    blurb: "This is a blurb.",
+  })
+}}
+
+{{
+  await comp.ImageWithTextLeft({
+    section_height_min: "300px",
+    image_orientation: "left",
+    image_url: "/assets/images/freelance/trax-showcase.png",
+    image_alt: "A mech!",
+    heading: "Image with text left",
+    blurb: "This is a blurb.",
+  })
+}}
+
+{{
+  await comp.PageSeparator({
+    heading: "Page Separator Heading",
+  })
+}}
+
+{{
+  await comp.ProjectOverview({
+    title: "Project Overview",
+    url: "projects/project-1",
+    subheading: "Subheading",
+    client: "Client name",
+    description:
+      "This is a case study description! We might have a whole bunch of text here. It can be considered a paragraph.",
+    keywords: [
+      "design",
+      "marketing",
+    ],
+    media_items: [
+      {
+        image_url: "assets/images/freelance/trax-showcase.png",
+        image_alt: "A mech!",
+      },
+      {
+        image_url: "assets/images/Hundred-Cuts-Logo-System_Youtube Icon.png",
+        image_alt: "A nice design.",
+      },
+    ],
+  })
+}}
+
+{{
+  await comp.SectionHeading({
+    heading: "Section Heading",
+    blurb: "A blurb to go with the heading.",
+  })
+}}
+
+{{
+  await comp.Showcase({
+    heading: "Showcase",
+    blurb: "This is a showcase blurb",
+    image_url: "/assets/images/plants.png",
+    image_alt: "A dark-green spread of fronds",
+  })
+}}
+
+{{
+  await comp.StackedContent({
+    content: [ // Using an array for the content
+      {
+        heading: "Stacked Content",
+        blurb: "This is the first blurb.",
+      },
+      {
+        heading: "Heading two",
+        blurb: "This is the second blurb.",
+      },
+      {
+        heading: "Heading three",
+        blurb: "This is the third blurb.",
+      },
+    ],
+  })
+}}
+
+{{
+  await comp.Quotes({
+    content: [ // Using an array for the content
+      {
+        subheading: "BEES",
+        heading: "Stacked Content",
+        blurb: "This is the first blurb.",
+      },
+      {
+        subheading: "BEES",
+        heading: "Heading two",
+        blurb: "This is the second blurb.",
+      },
+      {
+        subheading: "BEES",
+        heading: "Heading three",
+        blurb: "This is the third blurb.",
+      },
+    ],
+  })
+}}

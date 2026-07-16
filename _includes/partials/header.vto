@@ -1,0 +1,37 @@
+{{# It's the header! This contains the logo/name, the nav menu, social icons and theme selector #}}
+<div class="header-top">
+  <a class="logo" href="/">
+    {{ if site.logo }}
+      <img class="header-logo" src="{{ site.logo }}" alt="{{ site.name }}">
+    {{ else }}
+      <h1>{{ site.name }}</h1>
+    {{ /if }}
+  </a>
+  <div class="controls mobile-only">
+    <div class="theme-selector">
+      {{ include "partials/theme-selector.vto" }}
+    </div>
+    <div class="hamburger-icons">
+      {{ include "partials/hamburger-button.vto" }}
+    </div>
+  </div>
+</div>
+
+{{# Importing the menu component #}}
+{{# To change the order of navigation links, edit the header_links array in /_data.json #}}
+{{ include "partials/menu.vto" }}
+
+<div class="icons desktop-only">
+  {{# Show social links if there are any #}}
+  {{# Tip: social links can be added in ./_data.json #}}
+  {{ if site.social_links }}
+    <div class="social-links">
+      {{ include "partials/social-icon.vto" }}
+    </div>
+  {{ /if }}
+
+  {{# Finally, show the theme selector #}}
+  <div class="theme-selector desktop-only">
+    {{ include "partials/theme-selector.vto" }}
+  </div>
+</div>

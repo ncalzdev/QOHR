@@ -1,0 +1,117 @@
+{{> const uuid = crypto.randomUUID() }}
+
+<div class="hero-{{ uuid }}">
+  <div class="headings">
+    <h1>{{ heading }}</h1>
+    <h2>{{ subheading }}</h2>
+  </div>
+  <div class="image">
+    <img src="{{ image_url |> url }}" alt="{{ image_alt }}">
+  </div>
+</div>
+
+<style>
+	.hero-{{ uuid }} {
+		display: flex;
+		gap: 0rem;
+		min-height: {{ section_height_min }};
+		margin: 2rem 0;
+
+			& .headings {
+			display: flex;
+			flex-direction: column;
+			flex: 1 0 66%;
+
+			& h1 {
+				font-size: 80px;
+				line-height: 150%;
+				margin: 1rem 0 0;
+			}
+
+			& h2 {
+				font-family: 'Dosis';
+				font-weight: 400;
+				font-size: 64px;
+				margin: 0 0 1rem;
+			}
+		}
+
+		& .image {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex: 0 1 33%;
+
+			& img {
+				object-fit: contain;
+				min-height: 100%;
+				width: 100%;
+				border-radius: 8px;
+
+			}
+		}
+	}
+	
+	@media screen and (max-width: 1159px) {
+		.hero-{{ uuid }} {
+			& .headings {
+				& h1 {
+					font-size: 65px;
+				}
+				& h2 {
+					font-size: 48px;
+				}
+
+			}
+			& .image {
+				max-width: 66%;
+				margin: auto;
+				border-radius: 4px;
+
+			}
+		}
+	}
+
+	@media screen and (max-width: 839px) {
+		.hero-{{ uuid }} {
+			& .headings {
+				& h1 {
+					font-size: 48px;
+				}
+				& h2 {
+					font-size: 24px;
+				}
+			}
+			& .image {
+				max-width: 66%;
+				margin: auto;
+				border-radius: 4px;
+			}
+		}
+	}
+	@media screen and (max-width: 400px) {
+		.hero-{{ uuid }} {
+			flex-direction: column;
+			min-height: unset;
+
+			& .headings {
+				flex: 0 0;
+
+				& h1 {
+					font-size: 36px;
+				}
+				& h2 {
+					font-size: var(--font-size-large);
+				}
+			}
+
+			& .image {
+				max-width: 66%;
+				margin: auto;
+				border-radius: 8px;
+
+			}
+		}
+	}
+
+</style>

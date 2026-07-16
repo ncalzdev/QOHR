@@ -1,0 +1,16 @@
+---
+title: "Blog"
+draft: true
+---
+{{ set posts = search.pages("type=post") }}
+
+<ul>
+  {{ for post of posts }}
+    <li>
+      <a href="{{post.url}}">{{ post.title }}</a> - {{
+        post.published
+        |> date("HUMAN_DATE")
+      }}
+    </li>
+  {{ /for }}
+</ul>

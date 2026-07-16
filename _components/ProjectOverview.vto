@@ -1,0 +1,133 @@
+{{> const uuid = crypto.randomUUID() }}
+
+<div class="project-overview-{{ uuid }}">
+  <div class="project-details">
+    <div class="headings">
+        <h2>{{ title }}</h2>
+      </a>
+    </div>
+    {{ if client || keywords}}
+    <div class="info">
+      {{ if client }}
+        <p>{{ client }}</p>
+      {{ /if }}
+      {{ if keywords }}
+        <p>
+          {{ for keyword of keywords }}
+            <span class="keyword">{{ keyword }}</span>
+          {{ /for }}
+        </p>
+      {{ /if }}
+    </div>
+    {{ /if }}
+    {{ if descriptiontop }}
+      <div class="descriptiontop">
+        <div class="spacer"></div>
+        <p>
+          {{ descriptiontop }}
+        </p>
+      </div>
+            <div class="descriptionbottom">
+        <div class="spacer"></div>
+        <p>
+          {{ descriptionbottom }}
+        </p>
+      </div>
+    {{ /if }}
+  </div>
+  {{ if media_items}}
+    <div class="project-media">
+      {{ for media_item of media_items }}
+        <img
+          src="{{ media_item.image_url |> url }}"
+          alt="{{ media_item.image_alt }}"
+          class="media-item"
+          loading="lazy"
+        >
+      {{ /for }}
+    </div>
+  {{ /if }}
+</div>
+
+<style>
+  .project-overview-{{ uuid }} {
+    background-color: var(--color-background);
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 2rem 0;
+
+    & .project-details {
+      & > * {
+        display: flex;
+        align-items: baseline;
+        gap: 1rem;
+        padding: 0 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid var(--color-primary);
+        }
+
+        & > * {
+          width: 50%;
+        }
+      }
+
+      & .headings a {
+        display: flex;
+        width: 100%;
+        text-decoration: none;
+        align-items: baseline;
+
+        & > * {
+          width: 50%;
+        }
+      }
+
+      & .info {
+        font-weight: 600;
+      }
+    }
+
+    & .project-media {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      & img {
+        width: 100%;
+        object-fit: contain;
+        aspect-ratio: 1/1;
+        border-radius: 8px;
+
+      }
+    }
+
+    .keyword:not(:last-child)::after {
+      content: ",";
+    }
+  }
+
+  @media screen and (max-width: 484px) {
+    .project-overview-{{ uuid }} {
+      & .project-details .headings {
+        flex-direction: column;
+
+        * {
+          width: 100%;
+        }
+      }
+
+      & .project-media {
+        grid-template-columns: 1fr;
+      }
+
+      .spacer {
+        display: none;
+      }
+
+      .description * {
+        width: 100%;
+      }
+    }
+  }
+</style>

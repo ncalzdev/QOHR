@@ -1,0 +1,138 @@
+---
+title: Freelance
+subheading: "Showcasing the variety of work I've done across several industries"
+client: Freelance
+description:
+keywords: [
+  "architecture",
+    "healthcare",
+	"design",
+  	"UI",
+    	"UX",
+      	"systems design",
+        	"case study",
+]
+media_items: [
+	{
+		url: assets/images/freelance/freelance-hero.png,
+		alt: A highlight project of freelance work by Nicole Calzavara
+	},
+	{
+		url: assets/images/freelance/freelance-hero.png,
+		alt: A highlight project of freelance work by Nicole Calzavara
+	}
+]
+---
+
+
+{{
+  await comp.Hero({
+    heading: "MAKING IMPACTS THROUGH RAPID <br>FOR-HIRE SOLUTIONING",
+    subheading: "FREELANCE DESIGN SHOWCASE",
+    image_url: "/assets/images/freelance/freelance-hero.png",
+    image_alt: "A highlight project of freelance work by Nicole Calzavara",
+    section_height_min: "400px",
+  })
+}}
+
+<div>
+<p>
+Freelance work is not based in assured contexts or road-maps, it's a <b>get in, make change, and get out fast</b> working style.<br><br>I've worked in a variety of industries on a large number of problems. From healthcare to architecture, education to product design, I've done a variety of impactful projects for a number of businesses. Take a look below and see the works I've contributed to.
+</p>
+</div>
+
+{{
+  await comp.ProjectOverview({
+    title: "Strategizing document versioning for building code",
+    client: "Trax Inc.",
+    descriptiontop:
+    "Trax Codes contains the largest collection of up-to-date regulatory information in Canada for the construction industry, but needed design expertise to create a <b>flexible document management system for editing and managing versions of construction guidelines</b>.",
+      descriptionbottom:
+    "Through detailed competitor analysis, leveraging alternative inspiration like software development GitHub’s version and branch tracking, or in-industry document management best practices, I created <b>comprehensive designs within the existing Trax product, bridging existing and new features seamlessly</b> while delivering foundational UI/UX frameworks to reduce design/developer translation.",
+    keywords: [
+      "Construction",
+   "Architecture",
+   "UI/UX",
+   "Systems Design",
+    ],
+    media_items: [
+      {
+        image_url: "assets/images/freelance/trax-research.png",
+        image_alt: "A showcase of some of the interfaces I worked on for Trax",
+      },
+      {
+        image_url: "assets/images/freelance/trax-showcase.png",
+        image_alt: "A showcase of some of the interfaces I worked on for Trax",
+      },
+    ],
+  })
+}}
+<br><br>
+<!--I thought the page link was <a href="case-studies/studio/"></a> but that didn't work-->
+{{
+  await comp.ProjectOverview({
+    title: "Integrating experiential learning through a portable design studio",
+    client: "OCAD University",
+    descriptiontop:
+    "OCAD University’s Ambient Experience Research Lab saw a lack of self reflection, or revisiting work and feedback from design students post-critique. Through a developed framework of design competencies, I led a team to impact the lab’s new goal of <b>improving student sharing about learning through a low-stake digital environment.</b>",
+      descriptionbottom:
+    "My contributions as <em>Lead UX Designer</em> allowed us to develop a student-learning focused digital education aid, from design to classrooms in three months. We saw 75 students across 6 classrooms spend <b> more time spent taking about projects in progress, more opportunities to ask others for help, and less time hiding challenges or failures in both everyday work and portfolios</b><br><br> <a href='/projects/studio/'>You can view a full case study of this project by clicking on this link.</a>",
+    keywords: [
+      "Education",
+   "Mobile",
+   "UI/UX",
+    ],
+    media_items: [
+      {
+      image_url: "/assets/images/Studio/StudioRichInsights.jpg",
+      image_alt: "A showcase of student posts within the app",
+      link: "/projects/studio",
+      },
+      {
+      image_url: "/assets/images/Studio/StudioOverview.jpg",
+      image_alt: "The Overview, a graphic visualization of skills over time.",
+      link: "/projects/studio",
+      },
+    ],
+  })
+}}
+
+<br><br>
+
+{{
+  await comp.ProjectOverview({
+    title: "Reducing pressure through clear instructional materials",
+    client: "Eve Medical",
+    descriptiontop:
+    "One of my first internship and freelance positions was with Eve Medical, a startup through another OCAD University graduate. Sampling for HPV and cervical cancer is a uncomfortable and sometimes anxiety-inducing experience. Traditional pap-smears are a uncomfortable experience for many women worldwide, and EveKit was a great solution. But all good products are at risk of not working well if functionality is unclear.",
+      descriptionbottom:
+    "Through careful audit and review of the product and existing training materials, I mapped out and remade the educational and training materials that went into the kit to provide <b> step by step directions for using the kit, aimed specifically at reducing pressure and calmly guiding women through the at-home screening</b>",
+    keywords: [
+      "Healthcare",
+  "Instructional design",
+  "Graphic Design",
+    ],
+    media_items: [
+      {
+        image_url: "assets/images/freelance/EveKit_01.jpg",
+        image_alt: "The self-sampling applicator from EveKit.",
+      },
+      {
+        image_url: "assets/images/freelance/EveKit_02.png",
+        image_alt: "The EveKit packaging.",
+      },
+    ],
+  })
+}}
+
+<br><br>
+{{
+  await comp.ImageWithText({
+    section_height_min: "300px",
+    image_orientation: "left",
+      image_url: "/assets/images/baseline/baseline-showcase.png",
+      image_alt: "The deployable first aid kit, opened",
+    heading: "Want to be on this list?",
+    blurb: "I'm almost always looking for new opportunities in the fields of healthcare, education, civic and systems design. If you have something youd like my expertise on, please feel free to reach out. <br><br> Check out my <a href='/pages/work-with-me/'>work with me page</a>"
+    })
+}}

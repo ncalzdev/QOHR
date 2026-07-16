@@ -1,0 +1,59 @@
+{
+  "site": {
+    "name": "Nicole Calzavara",
+    "logo": "/assets/icons/NCD_Logo_larger.png",
+    "use_background_pattern": true,
+    "background_alpha": "0.85",
+    "background_pattern_size": "300px",
+    "background_pattern_lightmode": "/assets/images/Cross-Pattern.png",
+    "background_pattern_darkmode": "/assets/images/Cross-Pattern_dark.png",
+    "header": {
+      "header_links": [
+        {
+          "title": "About",
+          "link": "/pages/about"
+        },
+        {
+          "title": "Projects",
+          "link": "/pages/projects"
+        },
+        {
+          "title": "Freelance",
+          "link": "/pages/freelance"
+        },
+        {
+          "title": "Work with me",
+          "link": "/pages/work-with-me"
+        }
+      ]
+    },
+    "footer": {
+      "footer_background": "/assets/images/Footer_Background.png",
+      "footer_menu_title": "Connect",
+      "footer_links": [
+        {
+          "title": "LinkedIn",
+          "link": "https://www.linkedin.com/in/nicole-calzavara/"
+        },
+        {
+          "title": "Email",
+           "link": "mailto:designbynicole@proton.me"
+        },
+        {
+          "title": "Youtube",
+          "link": "https://youtube.com"
+        }
+      ]
+    },
+    "social_links": [
+      {
+        "title": "Email",
+        "link": "mailto:designbynicole@proton.me"
+      },
+      {
+        "title": "LinkedIn",
+        "link": "https://www.linkedin.com/in/nicole-calzavara/"
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{{> const uuid = crypto.randomUUID() }}
+
+<div class="quotes-{{ uuid }}">
+{{ for item of content }}
+  <div class="quotes__item">
+    <small>{{ item.subheading }}</small>
+    <h4>{{ item.heading }}</h4>
+    <div>
+        <p>{{ item.blurb }}</p>
+    </div>
+  </div>
+{{ /for }}
+</div>
+
+<style>
+    .quotes-{{ uuid }} {
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+
+        &>* {
+            width: 50%;
+        }
+    }
+
+			& .headings {
+			display: flex;
+			align-items:left;
+			flex-direction: column;
+			flex: 1 0 66%;
+
+
+			& h4 {
+				font-size: 24px;
+				line-height: 10%;
+				margin: 0rem 0 0;
+			}
+
+			& h5 {
+				font-family: 'Dosis';
+				font-weight: 400;
+				font-size: 12px;
+				margin: 0 0 0rem;
+			}
+
+			& small {
+				font-family: 'Dosis';
+				font-weight: 400;
+				font-size: 16px;
+				}
+
+		}
+
+    @media screen and (max-width: 839px) {
+        .quotes-{{ uuid }} {
+            flex-direction: column;
+
+            &>* {
+                width: 100%;
+            }
+        }
+    }
+</style>

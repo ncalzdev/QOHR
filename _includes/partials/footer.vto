@@ -1,0 +1,51 @@
+<div class="separator"></div>
+<div class="footer-content">
+  <div class="copyright">
+    {{# Always uses the current year with the date variable #}}
+    <span>Copyright &copy; {{ site.name }} {{ date |> date("yyyy") }}</span>
+  </div>
+  <div class="footer-heading">
+    <h2>
+      {{ if site.footer.footer_title }}
+        {{ site.footer.footer_title }}
+        {{# {{ else }}
+        {{ site.name }} #}}
+      {{ /if }}
+    </h2>
+    {{ if site.footer.footer_title }}
+      {{ include "partials/graduated-underlines.vto" }}
+    {{ /if }}
+  </div>
+  {{ include "partials/menu-utility.vto" }}
+</div>
+<div class="separator"></div>
+
+<style>
+  .footer-content {
+    z-index: 1; /* Put text above the background image */
+
+    & .footer-heading {
+      text-align: center;
+    }
+
+    & .underlines {
+      margin-bottom: 0.5rem;
+    }
+
+    & .utility-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      & a {
+        color: var(--color-text);
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+          color: var(--color-secondary);
+        }
+      }
+    }
+  }
+</style>

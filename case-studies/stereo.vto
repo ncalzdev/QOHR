@@ -1,0 +1,113 @@
+---
+title: Stereo
+subheading: "Sample Project"
+client: Design Project
+description: This is a case study description! We might have a whole bunch of text here. It can be considered a paragraph.
+keywords: [
+	"design",
+	"marketing"
+]
+media_items: [
+	{
+		url: assets/images/filename.png,
+		alt: Some nice plants.
+	},
+	{
+		url: assets/images/filename.png,
+		alt: A mech!
+	}
+]
+---
+<!--PROJECT STUB, REPLACE WITH BETTER WORK-->
+<!--PROJECT STUB, REPLACE WITH BETTER WORK-->
+<!--PROJECT STUB, REPLACE WITH BETTER WORK-->
+
+
+{{
+  await comp.ProjectOverview({
+    title: "Sample Sync TEst",
+    url: "./", // Tip! You can use "./" to get the URL for the current page, or write it manually :)
+    subheading: "An exercise in design",
+    client: "Naya Naga",
+    description:
+      "This is a case study description! We might have a whole bunch of text here. It can be considered a paragraph.",
+    keywords: [
+      "design",
+      "marketing",
+    ],
+    media_items: [
+      {
+        image_url: "assets/images/plants.png",
+        image_alt: "More plants!",
+      },
+      {
+        image_url: "assets/images/plants.png",
+        image_alt: "Some nice plants.",
+      },
+    ],
+  })
+}}
+
+
+{{ await comp.SectionHeading({heading: "Hello world!", blurb: "This is the blurb :)"}) }}
+
+
+
+{{ 
+    await comp.Showcase({
+            heading: "Testing the showcase", 
+            blurb: "This is a blurb", 
+            image_url: "assets/images/plants.png", 
+            image_alt: "A dark-green spread of fronds"
+        })
+}}
+
+
+
+{{
+    await comp.HorizontalGallery({ /* The usual syntax, until... */
+        cards: [ /* We need to open an array of cards with square braces :) */
+            {
+                card_url: "/pages/about",
+                image_url: "/assets/images/plants.png",
+                heading: "Heading",
+                blurb: "This is a card blurb"
+            },
+            /* As you can see, each card is a JSON object with the typical key: "value" structure. */
+            {
+                card_url: "/pages/contact",
+                image_url: "/assets/images/plants.png",
+                heading: "Heading 2",
+                blurb: "This is a second card blurb"
+            }, /* Remember to add a comma between card declarations! */
+            {
+                card_url: "https://example.com", /* You can give it remote URLs too! */
+                image_url: "/assets/images/plants.png",
+                heading: "Heading 3",
+                blurb: "This is another card blurb, wow"
+            }
+        ]
+    })
+}}
+<!-- Lex Instructions-->
+<p>
+  With that said, we're on a project page where all of the frontmatter data is
+  accessible to the document, so we could instead just use the <code>it</code>
+  variable to pass the same data into the component, like so:
+</p>
+
+<!--{{ await comp.ProjectOverview(it) }}-->
+
+<p>
+  ...and the result is the same, without the need to rewrite all of a project's
+  data manually :) <br>
+  One thing to keep in mind is that when you use the <code>it</code> variable for a
+  component, you need to omit the <code>{}</code> you would normally put inside the
+  <code>ComponentName()</code>.
+</p>
+
+<p>
+  Lastly, be aware that using <code>it</code> as the input value will only work on
+  project pages (or case study pages), since only those pages have the correct
+  data structure.
+</p>

@@ -1,0 +1,18 @@
+---
+layout: "layout.vto"
+---
+<article>
+  <div id="post-info">
+    <h2>{{ title }}</h2>
+    <p>
+      by {{ author }} on
+      <time datetime='{{ published |> date("HUMAN_DATE")}}'>
+        {{ published |> date("HUMAN_DATE") }}
+      </time>
+    </p>
+  </div>
+
+  <div id="post-content">
+    {{ content |> safe }}
+  </div>
+</article>

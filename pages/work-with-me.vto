@@ -1,0 +1,77 @@
+---
+title: "Work with me"
+draft: false
+---
+{{
+  await comp.PageSeparator({
+    heading: "WANT TO WORK WITH ME?",
+  })
+}}
+<p>From Freelance to Full-Time opportunities, bridging services for new design students, and world-class design. Please reach out using the form below or directly via email.</p>
+
+{{
+  await comp.ImageWithText({
+    section_height_min: "300px",
+    image_orientation: "left",
+    image_url: "/assets/images/Consulting.png",
+    image_url: "/assets/images/freelance/Consulting.png",
+    image_alt: "The virtual conferencing interface with the patient note panel visible, allowing practitioners to write notes and look at their patients simultaneously.",
+    heading: "Consultancy and Full-Time work for Healthcare, UI/UX, Systems and Industrial Design",
+    blurb: "I'm a driven Product Designer with over a decade of experience bridging the gaps between complex systems, and real people. I specialize in Healthcare, Education, and Design Systems, which allow me to combine traditional product design, with pragmatic systems design. If you're looking for a multi-disciplinary, passionate and self-driven designer to participate or lead your team, I'm yours."
+    })
+}}
+<br>
+{{
+  await comp.Quotes({
+    content: [ // Using an array for the content
+      {
+        subheading: "Rebecca Pariser - Design Leader",
+        heading: "Impact",
+        blurb: "Nicole is one of the most hard-working designers I’ve ever worked with. Her diligence and dedication to delivering results on time (in fact, usually early) is unparalleled. She’s a proactive self-starter, and takes the initiative to identify and solve problems. She sets her team up for success, and cares deeply about having an impact and enabling others.",
+      },
+      {
+        subheading: "Alight Tsai - Senior Designer",
+        heading: "Efficiency",
+        blurb: "I’ve rarely met a designer as efficient and systematic as Nicole. She has a unique gift for taking massive, complex projects and structuring them into comprehensive execution plans that save months of work. Beyond her impressive speed and volume, her design output is world-class—every deliverable is 'boardroom ready' and screams professionalism. If you need a designer who thinks in systems and executes with perfection, Nicole is the one. I’ve rarely met a designer as efficient and systematic as Nicole. She has a unique gift for taking massive, complex projects and structuring them into comprehensive execution plans that save months of work. Beyond her impressive speed and volume, her design output is world-class—every deliverable is 'boardroom ready' and screams professionalism. If you need a designer who thinks in systems and executes with perfection, Nicole is the one.",
+      },
+    ],
+  })
+}}
+
+<hr>
+
+{{
+  await comp.ImageWithTextRight({
+    section_height_min: "300px",
+    image_orientation: "left",
+    image_url: "/assets/images/Education.jpg",
+      image_alt: "The virtual conferencing interface with the patient note panel collapsed, enabling better face to face communication between callers.",
+    heading: "Educational mentorship and portfolio review",
+    blurb: "I'm a empathetic and motivated Design Educator, with several years of portfolio and professional preparation experience both individually and as OCAD University Faculty. I have a deep understanding of the challenges and barriers students have finding their first roles, and techniques designed to help them excel. I offer direct mentorship and group sessions to students who show that they take their practice seriously."
+    })
+}}
+<br>
+{{
+  await comp.Quotes({
+    content: [ // Using an array for the content
+      {
+        subheading: "Lin Cao - Student",
+        heading: "Portfolios and Bridging",
+        blurb: " ''Thank you so much for taking the time to review my work. Your feedback was incredibly valuable and, more importantly, very practical it’s given me a much clearer sense of how to bridge the gap between my academic projects and professional standards. I’m already working on incorporating your suggestions into my portfolio. Thanks again for your time and for being such a supportive mentor in the design community!'' ",
+      },
+      {
+        subheading: "Kenny Huang - OCADU Class of 2026",
+        heading: "Design Education",
+        blurb: "Nicole is highly knowledgeable and her advice truly reflects that. Whether it’s private feedback or a public speech, she’s able to be honest, concise, and straight-to-the-point without forgetting to empathize with the aspiring designer as a person.",
+      },
+    ],
+  })
+}}
+
+
+{{
+  await comp.PageSeparator({
+    heading: "START THE CONVERSATION",
+  })
+}}
+{{ include "partials/contact-form.vto" }}

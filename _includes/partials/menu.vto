@@ -1,0 +1,22 @@
+<nav class="header-menu nav-links">
+  {{# List all pages with a type of "page" as links #}}
+  {{ set pages = search.pages("type=page") }}
+
+  {{# Loop through each page returned by the pages variable above #}}
+  {{# {{ for page of pages }}
+    <a href="{{page.url}}">{{ page.title.toUpperCase() }}</a>
+  {{ /for }} #}}
+
+  {{# If you want to instead hardcode the order of pages in the header using /_data.json, use this: #}}
+  {{ for page of site.header.header_links }}
+    <a href="{{page.link}}">{{ page.title.toUpperCase() }}</a>
+    {{# Make sure the link in the JSON array uses an absolute URL (prepend it with a '/') #}}
+  {{ /for }}
+
+  {{# Treat social links as their own thing and append them: #}}
+  {{ for item of site.social_links }}
+    <a href="{{item.link }}" class="mobile-link">
+      {{ item.title.toUpperCase() }}
+    </a>
+  {{ /for }}
+</nav>

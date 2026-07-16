@@ -1,0 +1,20 @@
+{{# 
+	The footer menu, referred to as the utility menu.
+	Links can be added/removed from this list in /_data.json 
+#}}
+{{ if site.footer.footer_links.length >= 1 }}
+  <div class="utility-links">
+    <h5 class="utility-menu__heading">
+      {{ if site.footer.footer_menu_title }}
+        {{ site.footer.footer_menu_title }}
+      {{ else }}
+        Links
+      {{ /if }}
+    </h5>
+    {{ for footer_link of site.footer.footer_links }}
+      <a href="{{footer_link.link }}">
+        {{ footer_link.title.toUpperCase() }}
+      </a>
+    {{ /for }}
+  </div>
+{{ /if }}

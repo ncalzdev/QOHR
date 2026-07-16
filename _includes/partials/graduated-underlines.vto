@@ -1,0 +1,68 @@
+<div class="underlines">
+  <div class="page-separator__underline underline-1"></div>
+  <div class="page-separator__underline underline-2"></div>
+  <div class="page-separator__underline underline-3"></div>
+  <div class="page-separator__underline underline-4"></div>
+  <div class="page-separator__underline underline-5"></div>
+  <div class="page-separator__underline underline-6"></div>
+  <div class="page-separator__underline underline-7"></div>
+  <div class="page-separator__underline underline-8"></div>
+</div>
+
+<style>
+  /* Styling for the fancy underline element */
+  .underlines {
+    display: flex;
+    gap: 0.5rem;
+    width: 60%;
+    margin: 1rem auto;
+
+    & .page-separator__underline {
+      height: 2px;
+      border-radius: 2px;
+      background-color: var(--color-primary);
+      flex-basis: 1rem;
+    }
+
+    /* Individual line proportions */
+    & .underline-1 {
+      flex-grow: 1;
+    }
+    & .underline-2 {
+      flex-grow: 2;
+    }
+    & .underline-3 {
+      flex-grow: 4;
+    }
+    & .underline-4 {
+      flex-grow: 4;
+    }
+    & .underline-5 {
+      flex-grow: 5;
+    }
+    & .underline-6 {
+      flex-grow: 6;
+    }
+    & .underline-7 {
+      flex-grow: 7;
+    }
+    & .underline-8 {
+      flex-grow: 9;
+    }
+
+    /* Lines that we don't want to shrink */
+    & .underline-4,
+    .underline-5,
+    .underline-6,
+    .underline-7,
+    .underline-8 {
+      flex-shrink: 0;
+    }
+  }
+
+  @media screen and (max-width: 839px) {
+    .underlines {
+      width: 100%;
+    }
+  }
+</style>

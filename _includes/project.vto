@@ -1,0 +1,39 @@
+---
+layout: layout.vto
+---
+<article>
+  {{# Removing heading info as requested #}}
+
+  {{# 
+  <div class="headings">
+    <h1>{{ title }}</h1>
+    <h2>{{ subheading }}</h2>
+  </div>
+  <p class="client">{{ client }} &mdash; {{ date |> date("MM-yyyy") }}</p>
+
+  <hr> 
+  #}}
+
+  {{ content |> safe }}
+</article>
+
+<style>
+  article {
+    & .headings {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    & .client {
+      margin: 1rem 0;
+    }
+  }
+  @media screen and (max-width: 839px) {
+    article {
+      & .headings {
+        flex-direction: column;
+      }
+    }
+  }
+</style>

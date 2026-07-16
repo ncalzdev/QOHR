@@ -1,0 +1,38 @@
+{{# 
+    Usage syntax:
+    {{ await comp.SectionHeading({heading: "Welcome!", blurb: "This is a section heading's blurb"}) }} 
+#}}
+{{> const uuid = crypto.randomUUID() }}
+
+<div class="section-heading-{{ uuid }}">
+  {{ if heading }}
+    <h2>{{ heading }}</h2>
+  {{ /if }}
+  {{ if blurb }}
+    <div class="section-heading__blurb">
+      <p>{{ blurb }}</p>
+    </div>
+  {{ /if }}
+</div>
+
+<style>
+  .section-heading-{{ uuid }} {
+    display: flex;
+    align-items: top;
+    width: 100%;
+
+    & > * {
+      width: 50%;
+    }
+  }
+  @media screen and (max-width: 1159px) {
+    .section-heading-{{ uuid }} {
+      flex-direction: column;
+      justify-content: flex-start;
+
+      & > * {
+        width: 100%;
+      }
+    }
+  }
+</style>

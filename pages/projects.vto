@@ -1,0 +1,6 @@
+---
+title: Projects
+---
+
+{{ set projects = search.pages("type=project") }}
+{{ include "partials/grid.vto" { grid: projects, columns: 2 } }}
