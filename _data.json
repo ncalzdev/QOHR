@@ -1,6 +1,6 @@
 {
   "site": {
-    "name": "Nicole Calzavara",
+    "name": "QOHR - Queer Online Health Resource",
     "logo": "/assets/icons/NCD_Logo_larger.png",
     "use_background_pattern": true,
     "background_alpha": "0.85",
@@ -10,20 +10,8 @@
     "header": {
       "header_links": [
         {
-          "title": "About",
+          "title": "Coming Soon",
           "link": "/pages/about"
-        },
-        {
-          "title": "Projects",
-          "link": "/pages/projects"
-        },
-        {
-          "title": "Freelance",
-          "link": "/pages/freelance"
-        },
-        {
-          "title": "Work with me",
-          "link": "/pages/work-with-me"
         }
       ]
     },
@@ -32,16 +20,8 @@
       "footer_menu_title": "Connect",
       "footer_links": [
         {
-          "title": "LinkedIn",
-          "link": "https://www.linkedin.com/in/nicole-calzavara/"
-        },
-        {
           "title": "Email",
            "link": "mailto:designbynicole@proton.me"
-        },
-        {
-          "title": "Youtube",
-          "link": "https://youtube.com"
         }
       ]
     },
@@ -49,10 +29,6 @@
       {
         "title": "Email",
         "link": "mailto:designbynicole@proton.me"
-      },
-      {
-        "title": "LinkedIn",
-        "link": "https://www.linkedin.com/in/nicole-calzavara/"
       }
     ]
   }
