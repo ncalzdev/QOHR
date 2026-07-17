@@ -18,8 +18,8 @@
 
 	/* Body fonts */
 	@font-face {
-		font-family: "Dosis";
-		src: url(assets/fonts/Dosis-VariableFont_wght.ttf);
+		font-family: "Instrument Sans";
+		src: url(assets/fonts/InstrumentSans.ttf);
 	}
 	@font-face {
 		font-family: "Noto Sans JP";
@@ -65,8 +65,8 @@
 	--scale-factor: 1;
 
 	/* Font families */
-	--font-heading: 'Darkella', Helvetica, sans-serif;
-	--font-body: 'Dosis', 'Noto Sans JP', Helvetica, sans-serif;
+	--font-heading: 'Instrument Sans', Helvetica, sans-serif;
+	--font-body: 'Instrument Sans', 'Noto Sans JP', Helvetica, sans-serif;
 
 	/* Padding helper */
 	--padding: 2rem;

@@ -1,18 +1,59 @@
 {{> const uuid = crypto.randomUUID() }}
 
 <div class="showcase-{{ uuid }}">
-	<img src="{{image_url}}"{{ if image_alt }} alt="{{image_alt}}"{{ /if }}>
 	<h3>{{heading}}</h3>
 	<p>{{blurb}}</p>
+	<img src="{{image_url}}"{{ if image_alt }} alt="{{image_alt}}"{{ /if }}>
 </div>
 
 <style>
 	.showcase-{{ uuid }} {
 		width: 100%;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #0038F0;
+		margin: 0 0 1rem;
+		padding: 30px;
 
 		img {
 			width: 100%;
 			border-radius: 8px;
 		};
+
+		& h3 {
+			font-family: 'Instrument Sans';
+			font-weight: 800;
+			font-size: 36px;
+			margin: 0 0 1rem;
+			color:#0038F0;
+			}
+
+		& p {
+			font-size: 18px;
+			}
+			}
+
+	@media screen and (max-width: 400px) {
+		.hero-{{ uuid }} {
+			flex-direction: column;
+			min-height: unset;
+		}
+		.showcase-{{ uuid }} {
+				& h3 {
+					font-size: 24px;
+				}
+				& p {
+					font-size: 14px;
+				}
+
+			& .image {
+				max-width: 66%;
+				margin: auto;
+				border-radius: 8px;
+
+			}
+		}
 	}
+
+
 </style>

@@ -4,6 +4,7 @@
   <div class="headings">
     <h1>{{ heading }}</h1>
     <h2>{{ subheading }}</h2>
+	<h3>{{ caption }}</h3>
   </div>
   <div class="image">
     <img src="{{ image_url |> url }}" alt="{{ image_alt }}">
@@ -23,17 +24,25 @@
 			flex: 1 0 66%;
 
 			& h1 {
-				font-size: 80px;
+				font-size: 48px;
 				line-height: 150%;
 				margin: 1rem 0 0;
 			}
 
 			& h2 {
-				font-family: 'Dosis';
-				font-weight: 400;
-				font-size: 64px;
+				font-family: 'Instrument Sans';
+				font-weight: 600;
+				font-size: 22px;
 				margin: 0 0 1rem;
 			}
+
+			& h3 {
+				font-family: 'Instrument Sans';
+				font-weight: 400;
+				font-size: 22px;
+				margin: 0 0 1rem;
+			}
+
 		}
 
 		& .image {
@@ -56,10 +65,13 @@
 		.hero-{{ uuid }} {
 			& .headings {
 				& h1 {
-					font-size: 65px;
+					font-size: 36px;
 				}
 				& h2 {
-					font-size: 48px;
+					font-size: 22px;
+				}
+				& h3{
+					font-size: 22px;
 				}
 
 			}
@@ -76,11 +88,15 @@
 		.hero-{{ uuid }} {
 			& .headings {
 				& h1 {
-					font-size: 48px;
+					font-size: 36px;
 				}
 				& h2 {
-					font-size: 24px;
+					font-size: 18px;
 				}
+				& h3 {
+					font-size: 18px;
+				}
+				
 			}
 			& .image {
 				max-width: 66%;
