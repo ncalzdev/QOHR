@@ -277,18 +277,31 @@ h2 {
 /* Formerly 2.074 */
 h3 {
 	font-size: calc(1.750rem * var(--scale-factor));
+	color: #000;
+	margin-bottom:12px;
+
 }
 /* Formerly 1.728 */
 h4 {
-	font-size: calc(1.5rem * var(--scale-factor));
+	font-size: calc(1.750rem * var(--scale-factor));
+	color: #0038F0;
+	margin-bottom:12px;
 }
 /* Formerly 1.44 */
 h5 {
-	font-size: calc(1.250rem * var(--scale-factor));
+	font-size: calc(1.750rem * var(--scale-factor));
+	color:#D83E40;
+	margin-top:24px;
+	margin-bottom:12px;
+
 }
-/* Formerly 1.2 */
+
 h6 {
-	font-size: calc(1.0rem * var(--scale-factor));
+	font-size: calc(1.750rem * var(--scale-factor));
+	color:#D5B200;
+	margin-top:24px;
+	margin-bottom:12px;
+
 }
 p {
 	font-size: var(--font-size-medium);

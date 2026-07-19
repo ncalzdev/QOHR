@@ -13,18 +13,18 @@ layout: "/layout.vto"
   })
 }}
 
-<br><br>
+<br><br><br><br>
 {{
   await comp.ImageWithTextLeft({
     section_height_min: "300px",
     image_orientation: "left",
-    image_url: "/assets/images/stattrack.png",
+    image_url: "/assets/images/stattrack.gif",
     image_alt: "A mech!",
     heading: "There is no single health resource that factors in multiple types of care for anyone.",
     blurb: "Improved access in some countries and tightening legal restrictions in others limit the care LGBTQ+ people can access worldwide. Political agendas leverage queer people worldwide, stripping access to healthcare and making us scapegoats.",
   })
 }}
-<br><br>
+<br><br><br><br>
 {{
   await comp.ImageWithTextRight({
     section_height_min: "300px",
@@ -35,7 +35,7 @@ layout: "/layout.vto"
     blurb: "QOHR focuses on delivering answers for health needs through a single, interconnected database. By collecting, aggregating and delivering cradle-to-grave health conscious information, QOHR’s goal is to provide a resource never-before available.<br><br>Instead of focusing entirely on a single condition, QOHR looks at how different aspects of health inform each other. How caffeine interacts with ADHD, how bone density matters for transitioning individuals, how symptoms of one health issue inform others.",
   })
 }}
-<br><br>
+<br><br><br><br>
 {{
   await comp.Showcase({
     heading: "WHY QOHR MATTERS - OUR FIGHT ISN’T OVER",
@@ -44,7 +44,7 @@ layout: "/layout.vto"
     image_alt: "A scene of trans pride flags and black lives matters signs at a pride event.",
   })
 }}
-<br><br>
+<br><br><br><br>
 {{
   await comp.Showcase({
     heading: "PROJECT GOALS",
@@ -53,21 +53,27 @@ layout: "/layout.vto"
     image_alt: "Project Goals",
   })
 }}
-<br><br>
+<br><br><br><br>
+ 
 {{
-  await comp.Showcase({
-    heading: "BUSINESS MODEL & STRATEGY",
-    blurb: "Placeholder",
-    image_url: "/assets/images/whyitmatters.png",
-    image_alt: "A dark-green spread of fronds",
+  await comp.Framework({
+    heading: "HOW WE'LL GROW",
+        subheading1: "COLLECT",
+        blurb1: "We collect, aggregate, cite and deliver topics surrounding a single vertical at a time. We review all available resources provided by major groups, developing a unified perspective.",
+      
+        subheading2: "CONNECT",
+        blurb2: "Information gaps are highlighted, and used to identify areas of related care that interconnect with them. As further topics are collected and connected to previous ones, we gradually identify gaps in care for a variety of demographics.",
+     
+        subheading3: "CONSULT",
+        blurb3: "Collected information is then cross-checked with clinical care providers to verify details, gather further recommended care, and refine our offering. Community members are consulted about domains lacking support, that we can fill the gaps between.",
   })
 }}
 
-<br><br>
+<br><br><br><br>
 {{
   await comp.Showcase({
     heading: "HOW CAN YOU HELP?",
-    blurb: "<h2 style:''font-color: #0038F0;''>PARTNERS</h2>We need people to partner on this project and provide guidance, research and structure to eventually seek grants and network the tool worldwide. We’ll need figures to connect with professionals and organizations, stress-testing and more.<br><br><h2 style= ''font-color:#D83E40;''>CLINICIANS</h2>We need clinicians who believe in these goals to consult and ensure the advice we’re giving is within safe tolerances, despite political ideologies that decide otherwise.<br><br><h2>SUBJECT MATTER EXPERTS</h2>We need people to provide the initial structure that will be refined into the tool. People with medical backgrounds, community organizing specialists, the figures with the research already that we can collate.<br><br><h2 style=''font-color:#D5B200;''>COMMUNITY</h2>We need voices to contribute to the ideas shared by this tool widely and honestly. Share the hopes and dreams you wish could be fulfilled by this tool for further consideration by the creators of QOHR. ",
+    blurb: "<h4>PARTNERS</h4>We need people to partner on this project and provide guidance, research and structure to eventually seek grants and network the tool worldwide. We’ll need figures to connect with professionals and organizations, stress-testing and more.<h5>CLINICIANS</h5>We need clinicians who believe in these goals to consult and ensure the advice we’re giving is within safe tolerances, despite political ideologies that decide otherwise.<h3>SUBJECT MATTER EXPERTS</h3>We need people to provide the initial structure that will be refined into the tool. People with medical backgrounds, community organizing specialists, the figures with the research already that we can collate.<h6>COMMUNITY</h6>We need voices to contribute to the ideas shared by this tool widely and honestly. Share the hopes and dreams you wish could be fulfilled by this tool for further consideration by the creators of QOHR. ",
     image_url: "/assets/images/help.png",
     image_alt: "A dark-green spread of fronds",
   })
