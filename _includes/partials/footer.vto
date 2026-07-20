@@ -1,6 +1,9 @@
-<div class="separator"></div>
 <div class="footer-content">
+  <div>  
+  <img src="assets/icons/QOHR_Logo.png" style="width:150px; padding-bottom:24px;">
+  </div>
   <div class="copyright">
+
     {{# Always uses the current year with the date variable #}}
     <span>Copyright &copy; {{ site.name }} {{ date |> date("yyyy") }}</span>
   </div>
@@ -12,24 +15,18 @@
         {{ site.name }} #}}
       {{ /if }}
     </h2>
-    {{ if site.footer.footer_title }}
-      {{ include "partials/graduated-underlines.vto" }}
-    {{ /if }}
   </div>
   {{ include "partials/menu-utility.vto" }}
 </div>
-<div class="separator"></div>
 
 <style>
   .footer-content {
     z-index: 1; /* Put text above the background image */
+display:flex;
 
     & .footer-heading {
-      text-align: center;
-    }
-
-    & .underlines {
-      margin-bottom: 0.5rem;
+      text-align: left;
+      display:flex;
     }
 
     & .utility-links {
@@ -38,12 +35,14 @@
       gap: 0.5rem;
 
       & a {
-        color: var(--color-text);
+        color: var(--color-brandprimary);
+        font-weight: 800;
+        font-size:36px;
         text-decoration: none;
 
         &:hover {
           text-decoration: underline;
-          color: var(--color-secondary);
+          color: var(--color-brandtertiary);
         }
       }
     }

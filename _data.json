@@ -1,6 +1,6 @@
 {
   "site": {
-    "name": "QOHR - Queer Online Health Resource",
+    "name": "QOHR - The Queer Online Health Resource",
     "logo": "/assets/icons/NCD_Logo_larger.png",
     "use_background_pattern": true,
     "background_alpha": "0.85",
@@ -11,23 +11,22 @@
       "header_links": [
         {
           "title": "Coming Soon",
-          "link": "/pages/about"
+          "link": ""
         }
       ]
     },
     "footer": {
       "footer_background": "/assets/images/Footer_Background.png",
-      "footer_menu_title": "Connect",
       "footer_links": [
         {
-          "title": "Email",
+          "title": "Click here to contact",
            "link": "mailto:designbynicole@proton.me"
         }
       ]
     },
     "social_links": [
       {
-        "title": "Email",
+        "title": "Get in touch",
         "link": "mailto:designbynicole@proton.me"
       }
     ]

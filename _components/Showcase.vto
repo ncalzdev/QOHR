@@ -1,7 +1,7 @@
 {{> const uuid = crypto.randomUUID() }}
 
 <div class="showcase-{{ uuid }}">
-	<h2>{{heading}}</h2>
+	<h1>{{heading}}</h1>
 	<p>{{blurb}}</p>
 	<img src="{{image_url}}"{{ if image_alt }} alt="{{image_alt}}"{{ /if }}>
 </div>
@@ -11,7 +11,7 @@
 		width: 100%;
 		border-style: solid;
 		border-width: 1px;
-		border-color: #0038F0;
+		border-color: var(--color-brandprimary);
 		margin: 0 0 1rem;
 		padding: 30px;
 

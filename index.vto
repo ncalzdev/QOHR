@@ -4,7 +4,7 @@ layout: "/layout.vto"
 
 {{
   await comp.Hero({
-    heading: "QOHR<br><br>Building the largest free, interconnected Queer health resource",
+    heading: "Building the largest free, interconnected Queer health resource",
     subheading: "The comprehensive, actively growing online health resource bridging domains from endocrinology, immune and sexual health, and more.",
     caption: "QOHR is changing how queer health is accessed world wide. By breaking the boundaries between care types to provide a comprehensive, barrier-free and accessible queer health resource for all.</p>",
     image_url: "/assets/images/covergraphic.png",
@@ -30,7 +30,7 @@ layout: "/layout.vto"
     section_height_min: "300px",
     image_orientation: "left",
     image_url: "/assets/images/interconnected.png",
-    image_alt: "A mech!",
+    image_alt: "Image Graphic",
     heading: "What if we could have interconnected care in a single health resource.",
     blurb: "QOHR focuses on delivering answers for health needs through a single, interconnected database. By collecting, aggregating and delivering cradle-to-grave health conscious information, QOHR’s goal is to provide a resource never-before available.<br><br>Instead of focusing entirely on a single condition, QOHR looks at how different aspects of health inform each other. How caffeine interacts with ADHD, how bone density matters for transitioning individuals, how symptoms of one health issue inform others.",
   })
@@ -41,19 +41,19 @@ layout: "/layout.vto"
     heading: "WHY QOHR MATTERS - OUR FIGHT ISN’T OVER",
     blurb: "Queer identifying people have had more access to healthcare now than the past 50 years, largely through segmented, specialized resources. Now, systematic factors steadily grow to limit access to safe, accurate care for queer people worldwide, backsliding our access to health resources and care. <br><br>With the technology available today, we could create a comprehensive health resource filled with unbiased knowledge, and spread the wealth of information publicly available today to those who need it most.  QOHR aims to bring hope to queer peoples through clarity and ease of access to answering their health questions or concerns.",
     image_url: "/assets/images/whyitmatters.png",
-    image_alt: "A scene of trans pride flags and black lives matters signs at a pride event.",
+    image_alt: "Photo by Oriel Frankie Ashcroft on Pexels - A scene of trans pride flags and black lives matters signs at a pride event.",
   })
 }}
 <br><br><br><br>
-{{
+{{# {{
   await comp.Showcase({
-    heading: "PROJECT GOALS",
-    blurb: "QOHR’s primary goals are the following:",
-    image_url: "/assets/images/projectgoals.png",
-    image_alt: "Project Goals",
+    heading: "QOHR'S GOALS",
+    blurb: "<h4>Provide access to comprehensive health knowledge through common language and vetted research</h4><h5>Enable queer communities to speak competently about their own health needs</h5><h3>Deliver one interconnected resource that bridges multiple, separate isolated areas of care</h3><h6>Build a home for knowledge to be published freely, and without censorship</h6>",    
+    image_url: "/assets/images/projectgoals.jpg",
+    image_alt: "Photo by Brett Sayles on Pexels - Protesters doing a rally",
   })
 }}
-<br><br><br><br>
+<br><br><br><br> #}}
  
 {{
   await comp.Framework({
@@ -75,6 +75,15 @@ layout: "/layout.vto"
     heading: "HOW CAN YOU HELP?",
     blurb: "<h4>PARTNERS</h4>We need people to partner on this project and provide guidance, research and structure to eventually seek grants and network the tool worldwide. We’ll need figures to connect with professionals and organizations, stress-testing and more.<h5>CLINICIANS</h5>We need clinicians who believe in these goals to consult and ensure the advice we’re giving is within safe tolerances, despite political ideologies that decide otherwise.<h3>SUBJECT MATTER EXPERTS</h3>We need people to provide the initial structure that will be refined into the tool. People with medical backgrounds, community organizing specialists, the figures with the research already that we can collate.<h6>COMMUNITY</h6>We need voices to contribute to the ideas shared by this tool widely and honestly. Share the hopes and dreams you wish could be fulfilled by this tool for further consideration by the creators of QOHR. ",
     image_url: "/assets/images/help.png",
-    image_alt: "A dark-green spread of fronds",
+    image_alt: "Photo by Anna Shvets on Pexels - A multidisciplinary team collaborating",
   })
 }}
+
+<br><br>
+
+{{
+  await comp.PageSeparator({
+    heading: "WANT TO GET INVOLVED?",
+  })
+}}
+{{ include "partials/contact-form.vto" }}

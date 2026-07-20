@@ -1,7 +1,8 @@
 {{> const uuid = crypto.randomUUID() }}
 
-<div class="hero-{{ uuid }}">
+<div class="hero-{{ uuid }}"> 
   <div class="headings">
+    <img src="assets/icons/QOHR_Logo.png" style="width:150px;">
     <h1>{{ heading }}</h1>
     <h2>{{ subheading }}</h2>
 	<h3>{{ caption }}</h3>
@@ -41,6 +42,12 @@
 				font-weight: 400;
 				font-size: 22px;
 				margin: 0 0 1rem;
+			/*Overrides to h3*/
+				color: var(--color-primary);
+				background-color: var(--color-background-trans);
+				margin-right:120px;
+				padding:0px;
+				max-width: 750px;
 			}
 
 		}
