@@ -1,7 +1,7 @@
 {
   "site": {
     "name": "QOHR - The Queer Online Health Resource",
-    "logo": "/assets/icons/NCD_Logo_larger.png",
+    "logo": "/assets/icons/QOHR_Logo_L.png",
     "use_background_pattern": true,
     "background_alpha": "0.85",
     "background_pattern_size": "300px",
