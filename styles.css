@@ -66,6 +66,7 @@
 	--font-size-small: 16pt; 
 	--font-size-medium: 18pt; 
 	--font-size-large: 20pt; 
+	--font-line-height:1.4;
 	--scale-factor: 1;
 
 	/* Font families */
@@ -183,9 +184,10 @@ body {
 	background-color: var(--color-background);
 	margin: auto;
 	background-image: var(--background-pattern);
-	background-size: var(--background-pattern-size);
+	background-size: 180px;
 	font-family: var(--font-body);
 	font-size: var(--font-size-small);
+	line-height:var(--font-line-height);
 }
 
 header,

@@ -5,8 +5,8 @@
     "use_background_pattern": true,
     "background_alpha": "0.85",
     "background_pattern_size": "300px",
-    "background_pattern_lightmode": "/assets/images/Cross-Pattern.png",
-    "background_pattern_darkmode": "/assets/images/Cross-Pattern_dark.png",
+    "background_pattern_lightmode": "/assets/images/background_light.png",
+    "background_pattern_darkmode": "/assets/images/background_dark.png",
     "header": {
       "header_links": [
         {
