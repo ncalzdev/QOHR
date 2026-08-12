@@ -62,7 +62,7 @@
 	@media screen and (max-width: 840px) {
 		.image-with-text-right-{{ uuid }} {
 			flex-direction: 
-				{{ if image_orientation == 'left' || image_orientation == 'Left'}}
+				{{ if image_orientation == 'right' || image_orientation == 'Right'}}
 					column-reverse
 				{{ else }}
 					column
@@ -73,11 +73,11 @@
 				width: 100%;
 
 								& h2 {
-				font-size: 22px;
+				font-size: 32px;
 				}
 
 			& p {
-				font-size: 16px;
+				font-size: 18px;
 				}
 
 			}

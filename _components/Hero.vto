@@ -18,10 +18,26 @@
 		min-height: {{ section_height_min }};
 		margin: 2rem 0;
 
+		flex-direction:
+		{{ if image_orientation == 'left' || image_orientation == 'Left'}}
+			row-reverse
+		{{ else }}
+			row
+		{{ /if }}
+		;
+		gap: 2rem;
+		min-height:  
+			{{ if section_height_min }}
+				{{ section_height_min }}
+			{{ else }}
+				48px;
+			{{ /if }}
+		;
+
 			& .headings {
-			display: flex;
+			display: fill;
 			flex-direction: column;
-			flex: 1 0 66%;
+			flex: 1 0 10%;
 
 			& h1 {
 				font-size: 48px;
@@ -44,7 +60,6 @@
 			/*Overrides to h3*/
 				color: var(--color-primary);
 				background-color: var(--color-background-trans);
-				margin-right:120px;
 				padding:0px;
 				max-width: 750px;
 			}
@@ -55,10 +70,10 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			flex: 0 1 33%;
+			flex: 0 1 50%;
 
 			& img {
-				object-fit: contain;
+				object-fit: cover;
 				min-height: 100%;
 				width: 100%;
 				border-radius: 8px;
@@ -67,7 +82,7 @@
 		}
 	}
 	
-	@media screen and (max-width: 1159px) {
+	/* @media screen and (max-width: 1159px) {
 		.hero-{{ uuid }} {
 			& .headings {
 				& h1 {
@@ -82,19 +97,29 @@
 
 			}
 			& .image {
-				max-width: 66%;
+				object-fit: cover;
+				max-width: 80%;
 				margin: auto;
 				border-radius: 4px;
 
 			}
 		}
-	}
+	} */
 
-	@media screen and (max-width: 839px) {
+	@media screen and (max-width: 1159px) {
 		.hero-{{ uuid }} {
+
+			flex-direction: 
+				{{ if image_orientation == 'left' || image_orientation == 'Left'}}
+					column-reverse
+				{{ else }}
+					column
+				{{ /if }}
+			;
+
 			& .headings {
 				& h1 {
-					font-size: 36px;
+					font-size: 32px;
 				}
 				& h2 {
 					font-size: 18px;
@@ -102,38 +127,16 @@
 				& h3 {
 					font-size: 18px;
 				}
+			
 				
 			}
 			& .image {
-				max-width: 66%;
+				max-width: fit-content;
 				margin: auto;
 				border-radius: 4px;
 			}
 		}
 	}
-	@media screen and (max-width: 400px) {
-		.hero-{{ uuid }} {
-			flex-direction: column;
-			min-height: unset;
 
-			& .headings {
-				flex: 0 0;
-
-				& h1 {
-					font-size: 36px;
-				}
-				& h2 {
-					font-size: var(--font-size-large);
-				}
-			}
-
-			& .image {
-				max-width: 66%;
-				margin: auto;
-				border-radius: 8px;
-
-			}
-		}
-	}
 
 </style>
